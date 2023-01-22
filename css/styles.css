@@ -801,6 +801,7 @@ align-items: center; */
   margin-bottom: 16px;
   color: var(--text-color);
   resize: none;
+  transition: border-color var(--tra-parameters);
 }
 
 .modal-comment::placeholder {
@@ -808,6 +809,10 @@ align-items: center; */
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:focus {
+  border-color: var(--accent-color);
 }
 
 .input-check {
